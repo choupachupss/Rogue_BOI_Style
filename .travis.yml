@@ -5,6 +5,7 @@
 # Language choice
 language: cpp
 compiler:
+  - objective-c # for switch to mac os x
   - clang
   - gcc
 
