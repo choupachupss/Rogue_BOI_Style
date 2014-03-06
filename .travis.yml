@@ -3,11 +3,12 @@
 #
 
 # Language choice
-language: cpp
-compiler:
+language:
   - objective-c # for switch to mac os x
-    # - clang
-    #- gcc
+  - cpp
+compiler:
+- clang
+- gcc
 
 before_install:
 - brew update
