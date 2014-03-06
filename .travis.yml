@@ -29,8 +29,9 @@ after_install:
 script : cmake . && make
 # Choose branchs
 branches:
-  - master
-  - develop
+  - masterMacOsX
+# - master
+# - develop
 
 # configuration of notifications
 notifications:
