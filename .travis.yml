@@ -12,6 +12,8 @@ compiler:
 
 before_install:
 - brew update
+- brew tap Homebrew/homebrew-versions
+- brew update
 
 # Depency install
 install:
