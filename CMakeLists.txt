@@ -5,10 +5,6 @@ project(KiroGame)
 
 set(EXECUTABLE_OUTPUT_PATH bin/${CMAKE_BUILD_TYPE})
 set(EXECUTABLE_NAME KiroGame)
-<<<<<<< HEAD
-=======
-set(CMAKE_CXX_FLAGS "-std=c++0x -Wall")
->>>>>>> upstream/develop
 
 # Compilator configuration
 #set de base kiroxas 
@@ -17,7 +13,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -Wall")
 # -ubuntu gcc 4.8
 # -mac gcc 4.8
 #message("Setting up gcc for C++11 with libc++.")
-#set(CMAKE_CXX_FLAGS -std=c++0x)
+#set(CMAKE_CXX_FLAGS "-std=c++0x -Wall")
 
 # mac 
 #gcc 4.8
@@ -32,7 +28,7 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -Wall")
 
 #set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++")
 #set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
-set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
+set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++ -Wal")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libc++")
 
 #message("Setting up Xcode for C++11 with libc++.")
@@ -51,7 +47,7 @@ Characters/*
 Input/*
 Maze/*
 Misc/*
-"Rendering Engine/*"
+Rendering Engine/*"
 Views/*
 main.cpp
 )
@@ -61,7 +57,6 @@ add_executable(
 ${EXECUTABLE_NAME}
 ${source_file}
 )
-
 
 # add libraries dependencies
 #Need SFML Library
