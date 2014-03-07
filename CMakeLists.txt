@@ -47,8 +47,9 @@ Characters/*
 Input/*
 Maze/*
 Misc/*
-Rendering Engine/*"
+"Rendering Engine/*"
 Views/*
+Level.cpp
 main.cpp
 )
 
