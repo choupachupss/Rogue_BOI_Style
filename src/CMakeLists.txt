@@ -28,8 +28,12 @@ set(EXECUTABLE_NAME KiroGame)
 # -ubuntu gcc 4.8
 # -mac gcc 4.8
 #message("Setting up gcc for C++11 with libc++.")
+<<<<<<< HEAD:src/CMakeLists.txt
 set(CMAKE_CXX_FLAGS "-std=c++0x -Wall")
 #set(CMAKE_CXX_FLAGS "-std=c++0x")
+=======
+#set(CMAKE_CXX_FLAGS "-std=c++0x -Wall")
+>>>>>>> 329193fb8713284ea946c1bc39f0a6a48572b453:CMakeLists.txt
 
 # mac 
 #gcc 4.8
@@ -44,11 +48,16 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -Wall")
 
 #set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++")
 #set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
+<<<<<<< HEAD:src/CMakeLists.txt
 
 ##bon
 #set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
 ##set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++ -Wall")
 #set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libc++")
+=======
+set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++ -Wal")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libc++")
+>>>>>>> 329193fb8713284ea946c1bc39f0a6a48572b453:CMakeLists.txt
 
 #message("Setting up Xcode for C++11 with libc++.")
 #set(CMAKE_XCODE_ATTRIBUTE_CLANG_CXX_LANGUAGE_STANDARD "c++0x")
@@ -62,12 +71,21 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -Wall")
 file(
 GLOB_RECURSE
 source_file
+<<<<<<< HEAD:src/CMakeLists.txt
 src/Characters/*
 src/Input/*
 src/Maze/*
 src/Misc/*
 "src/Rendering Engine/*"
 src/Views/*
+=======
+Characters/*
+Input/*
+Maze/*
+Misc/*
+"Rendering Engine/*"
+Views/*
+>>>>>>> 329193fb8713284ea946c1bc39f0a6a48572b453:CMakeLists.txt
 Level.cpp
 main.cpp
 )
