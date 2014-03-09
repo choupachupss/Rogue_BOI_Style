@@ -7,7 +7,7 @@
 #include <vector>
 #include "../Characters/Character.h"
 #include "../Misc/GameInfo.h"
-#include "../level.h"
+#include "../Level.h"
 
 namespace rendering
 {
