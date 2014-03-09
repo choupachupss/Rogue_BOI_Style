@@ -6,7 +6,7 @@
 #include <utility>
 
 #define VERBOSE 
-#define MAZE_LOG_PATH "../Logs/Maze_Generation.log"
+#define MAZE_LOG_PATH "../LOgs/Maze_Generation.log"
 #define RENDERING_PATH "../Logs/Rendering.log"
 #define NUMBER_OF_ROOMS 5
 
