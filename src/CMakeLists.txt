@@ -54,7 +54,7 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 
     # les deux qui fonctionne
     #set(CMAKE_CXX_FLAGS "-std=c++0x")
-    set(CMAKE_CXX_FLAGS "-std=c++11") 
+    #set(CMAKE_CXX_FLAGS "-std=c++11") 
 
     # clang 3.4
 
@@ -62,7 +62,7 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     #set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
 
     ##bon
-    #set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
+    set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
     ##set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++ -Wall")
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libc++")
 
