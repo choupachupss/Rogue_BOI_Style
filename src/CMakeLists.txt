@@ -7,7 +7,7 @@ project(KiroGame)
 #set(dir build/)
 #set(dir ${CMAKE_CURRENT_BINARY_DIR}/build/)
 #set(dir ${CMAKE_BINARY_DIR}/build/)
-set(dir ${PROJECT_BINARY_DIR})
+#set(dir ${PROJECT_BINARY_DIR})
 
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${dir})
 #set(CMAKE_BUILD_FILES_DIRECTORY ${dir})
@@ -18,7 +18,8 @@ set(dir ${PROJECT_BINARY_DIR})
 #set(CMAKE_PROJECT_BINARY_DIR  ${dir})
 
 
-set(EXECUTABLE_OUTPUT_PATH ${dir}/bin/${CMAKE_BUILD_TYPE})
+#set(EXECUTABLE_OUTPUT_PATH ${dir}/bin/${CMAKE_BUILD_TYPE})
+set(EXECUTABLE_OUTPUT_PATH bin/${CMAKE_BUILD_TYPE})
 set(EXECUTABLE_NAME KiroGame)
 
 # Compilator configuration
@@ -68,8 +69,8 @@ src/Maze/*
 src/Misc/*
 "src/Rendering Engine/*"
 src/Views/*
-Level.cpp
-main.cpp
+src/Level.cpp
+src/main.cpp
 )
 
 # create binaries
