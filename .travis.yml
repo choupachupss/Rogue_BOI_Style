@@ -23,7 +23,7 @@ install:
 - sudo apt-get install libjpeg8-dev libgpgme11-dev libsndfile1-dev libopenal-dev
 - sudo apt-get install libsfml-dev
 
-after_install:
+#after_install:
 - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
 
 # Build
