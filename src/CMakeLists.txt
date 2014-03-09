@@ -63,14 +63,14 @@ set(CMAKE_CXX_FLAGS "-std=c++0x -Wall")
 file(
 GLOB_RECURSE
 source_file
-src/Characters/*
-src/Input/*
-src/Maze/*
-src/Misc/*
-"src/Rendering Engine/*"
-src/Views/*
-src/Level.cpp
-src/main.cpp
+Characters/*
+Input/*
+Maze/*
+Misc/*
+"Rendering Engine/*"
+Views/*
+Level.cpp
+main.cpp
 )
 
 # create binaries
