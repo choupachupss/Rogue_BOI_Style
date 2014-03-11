@@ -50,7 +50,7 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 
     #gcc 4.8
     #set(CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++")
-    #set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
+    set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
 
     # les deux qui fonctionne
     #set(CMAKE_CXX_FLAGS "-std=c++0x")
@@ -62,10 +62,11 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     #set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
 
     ##bon
-    set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
+    #set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++")
     ##set(CMAKE_CXX_FLAGS "-std=c++11 -stdlib=libc++ -Wall")
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libc++")
+    # set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libc++")
 
+    # Xcode
     #message("Setting up Xcode for C++11 with libc++.")
     #set(CMAKE_XCODE_ATTRIBUTE_CLANG_CXX_LANGUAGE_STANDARD "c++0x")
     #set(CMAKE_XCODE_ATTRIBUTE_CLANG_CXX_LIBRARY "libc++")
