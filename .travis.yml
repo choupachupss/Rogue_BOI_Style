@@ -3,23 +3,23 @@
 #
 
 # Language choice
-language:
-  - objective-c # for switch to mac os x
+language :
+  - objective-c #for switch to mac os x
   - cpp
-compiler:
-  #- clang
+compiler :
 - gcc
+  #- clang
 
-before_install:
-    - brew update
-    - brew tap Homebrew/homebrew-versions
-   #- brew tap choupachupss/homebrew-versions  
-    - brew update
+before_install :
+  - brew update
+  - brew tap Homebrew/homebrew-versions
+  #- brew tap choupachupss/homebrew-versions  
+  - brew update
 
 # Depency install
-install:
+install :
   # update gcc and clang
-  - brew install gcc48 #--verbose
+  - brew install gcc48#--verbose
   #- brew install llvm --with-clang --with-asan
   # lib install
   - brew install sfml
@@ -33,16 +33,16 @@ install:
 script : mkdir build && cd build/ && cmake ../src/ && make
 
 # Choose branchs
-branches:
+branches :
   - tempo
-    #  - masterMacOsX
+#  - masterMacOsX
 # - master
 # - develop
 
 # configuration of notifications
-notifications:
-  email:
+notifications :
+  email :
     recipients :
     - mouton.guillaume88@gmail.com
-    on_success: change
-    on_failure: always
+    on_success : change
+    on_failure : always
