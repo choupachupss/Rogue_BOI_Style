@@ -12,13 +12,14 @@ compiler:
 
 before_install:
 - brew update
-- brew tap Homebrew/homebrew-versions
+  #- brew tap Homebrew/homebrew-versions
+- brew choupachupss/homebrew-versions  
 - brew update
 
 # Depency install
 install:
   # update gcc and clang
-  #- brew install gcc48
+  - brew install gcc48
   #- brew install llvm --with-clang --with-asan 
   # lib install
 - brew install sfml
@@ -26,7 +27,7 @@ install:
 #after_install:
 - clang --version
 - gcc --version
-#- if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
+- if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
 
   # Build
 script : mkdir build && cd build/ && cmake ../src/ && make
