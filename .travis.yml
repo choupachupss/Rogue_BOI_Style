@@ -5,10 +5,10 @@
 # Language choice
 language :
   - objective-c #for switch to mac os x
-  - cpp
+    #- cpp
 compiler :
 - gcc
-  #- clang
+- clang
 
 before_install :
   - brew update
