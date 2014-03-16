@@ -11,10 +11,10 @@ compiler:
 - gcc
 
 before_install:
-- brew update
-- brew tap Homebrew/homebrew-versions
-  #- brew tap choupachupss/homebrew-versions  
-- brew update
+    - brew update
+    - brew tap Homebrew/homebrew-versions
+   #- brew tap choupachupss/homebrew-versions  
+    - brew update
 
 # Depency install
 install:
@@ -22,7 +22,7 @@ install:
   - brew install gcc48 --verbose
   #- brew install llvm --with-clang --with-asan 
   # lib install
-- brew install sfml
+  - brew install sfml
 
 #after_install:
 - clang --version
@@ -31,7 +31,8 @@ install:
 
   # Build
 script : mkdir build && cd build/ && cmake ../src/ && make
-# Choose branchs
+
+  # Choose branchs
 branches:
   - tempo
     #  - masterMacOsX
