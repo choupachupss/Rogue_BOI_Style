@@ -12,14 +12,14 @@ compiler:
 
 before_install:
 - brew update
-  #- brew tap Homebrew/homebrew-versions
-- brew tap choupachupss/homebrew-versions  
+- brew tap Homebrew/homebrew-versions
+  #- brew tap choupachupss/homebrew-versions  
 - brew update
 
 # Depency install
 install:
   # update gcc and clang
-  - brew install gcc48
+  - brew install gcc48 --verbose
   #- brew install llvm --with-clang --with-asan 
   # lib install
 - brew install sfml
