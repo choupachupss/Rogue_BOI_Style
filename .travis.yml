@@ -8,12 +8,12 @@ language:
   - cpp
 compiler:
 - clang
-  #- gcc
+- gcc
 
 before_install:
 - brew update
   #- brew tap Homebrew/homebrew-versions
-- brew choupachupss/homebrew-versions  
+- brew tap choupachupss/homebrew-versions  
 - brew update
 
 # Depency install
