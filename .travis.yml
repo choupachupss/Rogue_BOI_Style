@@ -3,8 +3,10 @@
 #
 
 # Language choice
-language : objective-c #for switch to mac os x
-    #- cpp
+# #for switch to mac os x
+language : objective-c
+  #  - objective-c     #- cpp
+
 compiler :
 - gcc
 - clang
@@ -18,7 +20,7 @@ before_install :
 # Depency install
 install :
   # update gcc and clang
-  - brew install gcc48 # - -verbose
+  - brew install gcc48 --verbose
   #- brew install llvm --with-clang --with-asan
   # lib install
   - brew install sfml
