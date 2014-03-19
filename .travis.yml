@@ -21,12 +21,14 @@ before_install :
 install :
   # update gcc and clang
   # dependency of gcc48, permit just verbose in gcc build
-  - brew install gmp4
-  - brew install libmpc08
-  - brew install mpfr2
-  - brew install cloog018
-  - brew install isl011
-  - brew install gcc48 --verbose
+  #- brew install gmp4
+  #- brew install libmpc08
+  #- brew install mpfr2
+  #- brew install cloog018
+  #- brew install isl011
+  - brew install gcc48 --only-dependencies
+  - brew install gcc48 --debug
+    #- brew install gcc48 --verbose
   #- brew install gcc48 --enable-verbose
   #- brew install llvm --with-clang --with-asan
   # lib install
