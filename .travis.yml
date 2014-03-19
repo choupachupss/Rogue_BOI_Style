@@ -13,15 +13,21 @@ compiler :
 
 before_install :
   - brew update
-  #- brew tap Homebrew/homebrew-versions
-  - brew tap choupachupss/homebrew-versions  
+  - brew tap Homebrew/homebrew-versions
+  #- brew tap choupachupss/homebrew-versions  
   - brew update
 
 # Depency install
 install :
   # update gcc and clang
-  #- brew install gcc48 --verbose
-  - brew install gcc48 --enable-verbose
+  # dependency of gcc48, permit just verbose in gcc build
+  - brew install gmp4
+  - brew install libmpc08
+  - brew install mpfr2
+  - brew install cloog018
+  - brew install isl011
+  - brew install gcc48 --verbose
+  #- brew install gcc48 --enable-verbose
   #- brew install llvm --with-clang --with-asan
   # lib install
   - brew install sfml
